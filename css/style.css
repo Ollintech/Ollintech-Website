@@ -4,8 +4,16 @@ body {
     font-family: 'Segoe UI', sans-serif;
   }
 
+  h2{
+    font-weight: bold;
+  }
+
   .navbar {
     background-color: #121212;
+  }
+
+  .container {
+    height: 90vh;
   }
 
   .nav-link {
@@ -52,7 +60,7 @@ body {
 
   .sobre-nos {
     background-color: #1e1e1e;
-    padding: 50px 20px;
+    padding: 100px 20px;
     text-align: center;
   }
 
@@ -61,22 +69,53 @@ body {
     color: white;
   }
 
-  .highlight {
-    color: #d5238e;
+  body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
   }
-
-  .footer-img {
-    max-width: 300px;
+  
+  .footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .logo-img {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-text {
+    font-size: 1.1rem;
+  }
+  
+  .divider-ft {
+    height: 60px;
+    width: 2px;
+    background-color: #e6007e;
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .icon-text i {
+    font-size: 1.2rem;
+  }
+  
+  .footer .copyright {
     margin-top: 30px;
-  }
-
-  .divider {
-    width: 3px;
-    height: 100px;
-    background-color: #d5238e;
-    margin: 0 40px;
-  }
-
-  .logo {
-    max-height: 40px;
+    color: #aaa;
+    font-size: 0.9rem;
   }
