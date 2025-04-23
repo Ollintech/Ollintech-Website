@@ -2,10 +2,15 @@ body {
     background-color: #1e1e1e;
     color: white;
     font-family: 'Segoe UI', sans-serif;
+    font-size: 1.3rem;
   }
 
   h2{
     font-weight: bold;
+  }
+
+  .logo {
+    width: 15vw;
   }
 
   .navbar {
@@ -22,6 +27,13 @@ body {
 
   .nav-link.active, .nav-link:hover {
     color: #d5238e !important;
+  }
+
+  .divider {
+    width: 200px;
+    height: 5px; 
+    background-color: #D5238E; 
+    border-radius: 4px;
   }
 
   .hero {
@@ -44,19 +56,39 @@ body {
 
   .section-icons {
     background-color: #2b2b2b;
-    padding: 40px 20px;
+    padding: 30px 10px;
+    min-height: 90vh; /* altura mínima opcional pra dar espaço */
+    display: flex;
+    align-items: center;
   }
-
+  
+  .section-icons .container {
+    width: 100%;
+  }
+  
+  .section-icons .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .section-icons .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 20px;
+    color: white;
   }
-
-  .section-icons .icon-box i {
-    font-size: 40px;
+  
+  .icon {
+    font-size: 20vw !important;
     color: #d5238e;
     margin-bottom: 15px;
   }
+  
 
   .sobre-nos {
     background-color: #1e1e1e;
@@ -67,6 +99,10 @@ body {
   .sobre-nos h2 {
     font-weight: bold;
     color: white;
+  }
+
+  .image {
+    max-width: 20vw;
   }
 
   body {
