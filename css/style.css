@@ -10,15 +10,16 @@ body {
   }
 
   .logo {
-    width: 15vw;
+    width: 11vw;
   }
 
   .navbar {
-    background-color: #121212;
+    border-radius: 0px 0px 18px 18px;
   }
 
   .container {
-    height: 90vh;
+    height: 85vh;
+    margin-top: 2vh;
   }
 
   .nav-link {
@@ -38,6 +39,7 @@ body {
 
   .hero {
     text-align: center;
+    background-color: #1e1e1e;
     padding: 80px 20px;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -84,15 +86,14 @@ body {
   }
   
   .icon {
-    font-size: 20vw !important;
+    font-size: 10vw !important;
     color: #d5238e;
     margin-bottom: 15px;
   }
   
 
-  .sobre-nos {
-    background-color: #1e1e1e;
-    padding: 100px 20px;
+  .section {
+    padding: 70px;
     text-align: center;
   }
 
