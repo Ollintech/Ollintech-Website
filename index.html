@@ -1,227 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ollintech</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollintech</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo-alt.png">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: rgb(12, 12, 12);">
-    <div class="container-fluid px-4">
-      <a class="navbar-brand text-white d-flex align-items-center" href="#">
-        <span class="logo-text"><img src="images/logo-nav.png" alt="Logo" class="logo me-2" /></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projeto">Projeto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo-nav.png" id="nav-icon"></a>
+            <div id="x"></div>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="nav-bar">
+                <span class="navbar-toggler-icon" id="nav-bar2"></span>
+            </button>
 
-  <!-- Home -->
-  <section class="hero" style="background-image: url(images/ondas.png);">
-    <div class="container" style="height: 70vh;">
-      <div class="row align-items-center" style="margin-left: 15vw; margin-top: 10vh;">
-
-        <!-- Logo -->
-        <div class="col-md-6 text-center text-md-start mb-5 mb-md-0">
-          <img src="images/logo.png" alt="Logo Ollintech" style="max-width: 360px; max-height: auto;">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home" id="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre" id="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#integrantes" id="nav-link">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mitescan" id="nav-link">Projeto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <!-- texto -->
-        <div class="col-md-6 text-center text-md-start">
-          <h2 class="fw-bold display-6">A MUDANÇA.<br>O MOVIMENTO.<br>A DIFERENÇA.</h2>
-          <p class="mt-3 fs-5">Ollintech, implementando a<br>inovação na tecnologia.</p>
+    <main>
+        <!-- HOME -->
+        <section class="bg2" id="home" style="background-image: url(images/ondas.png);">
+            <div class="content-home">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/logo-alt.png">
+                    <img src="images/logo.png" alt="logo ollintech">
+                </picture>
+                <div class="mt-2" id="space">
+                    <h1 class="title">
+                        A MUDANÇA. <br> O MOVIMENTO. <br> A DIFERENÇA.
+                    </h1>
+                    <p>Ollintech, implementando a
+                        inovação na tecnologia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDIRECT -->
+        <section class="txt-center redirect bg1">
+            <div class="center">
+                <i class="icon bi bi-pencil-square"></i>
+                <h4 class="title">SOBRE</h4>
+                <a href="#sobre">Clique aqui para conhecer mais sobre a equipe e ossa história! </a>
+            </div>
+
+            <div class="center">
+                <i class="icon bi bi-people-fill"></i>
+                <h4 class="title">INTEGRANTES</h4>
+                <a href="#integrantes">Conheça um pouco mais sobre os integrantes da eqipe e suas funções. </a>
+            </div>
+
+            <div class="center">
+                <i class="icon bi bi-briefcase-fill"></i>
+                <h4 class="title">PROJETO</h4>
+                <a href="#mitescan">Saiba mais sobre o principal projeto da equipe. </a>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="bg2" id="sobre">
+            <h2 class="title">SOBRE NÓS</h2>
+            <div class="line"></div>
+            <p class="txt-justify">A ollintech é uma equipe de tecnologia que surgiu na FATEC, para a realização de um
+                trabalho, o Projeto Integrador, que visa o desenvolvimento de um sistema para a solução de algum
+                problema, mas
+                para isso era necessária a criação de uma logomarca e identidade visual.</p>
+            <div class="content">
+                <img src="images/logo-footer.png" alt="logo ollintech" class="photo">
+                <div class="line2 my-4"></div>
+                <img src="images/mockup-ollintech.png" alt="mockup" class="photo">
+            </div>
+        </section>
+
+        <!-- PALETA DE CORES -->
+        <section class="bg1" style="height: auto;">
+            <h2 class="title">PALETA DE CORES</h2>
+            <div class="line"></div>
+
+            <p class="txt-justify">
+                Para as cores da nossa logomarca, nós da equipe, pensamos num tom monocromático (variações de tom de uma
+                cor),
+                logo chegamos ao rosa, que passa uma sensação de criatividade, imaginação e conexão. Além disso,
+                adicionamos um
+                “coringa”, um tom de preto mais claro, que inclusive é utilizado nesse website.
+            </p>
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/paleta-alt-vertical.png">
+                <source media="(max-width: 800px )" srcset="images/paleta.png">
+                <img src="images/paleta-alt.png" alt="paleta de cores" class="mt-4">
+            </picture>
+        </section>
+
+        <!-- TIPOGRAFIA -->
+        <section class="bg2">
+            <h2 class="title">TIPOGRAFIA</h2>
+            <div class="line"></div>
+            <p class="txt-justify">
+                A tipografia escolhida para a nossa marca foi a <strong>"Kanit"</strong>, uma fonte moderna e robusta
+                que passa a ideia de tecnologia, inovação e confiança.
+            </p>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/fonte-alt.png">
+                <img src="images/fonte.png" alt="fonte-kanit" class="mt-5">
+            </picture>
+        </section>
+
+        <!-- INTEGRANTES -->
+        <section class="bg1 txt-center" id="integrantes">
+            <h2 class="title">INTEGRANTES</h2>
+            <div class="line"></div>
+            <div class="row justify-content-center g-4 mt-5">
+                <!-- Card 1 -->
+                <div class="col-md-3 col-6">
+                    <img src="images/ana.png" alt="Ana Flávia" class="photo">
+                    <h4>Ana Flávia</h4>
+                    <p>Back-end <br> 4º DSM</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 col-6">
+                    <img src="images/gusta.png" alt="Gustavo Lanna" class="photo">
+                    <h4>Gustavo Lanna</h4>
+                    <p>UX-UI e Front-end <br> 4º DSM</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 col-6">
+                    <img src="images/isa.png" alt="Isabely lemos" class="photo">
+                    <h4>Isabely Lemos</h4>
+                    <p>Back-end <br> 4º DSM</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 col-6">
+                    <img src="images/yas.png" alt="Yasmin Pires" class="photo">
+                    <h4>Yasmin Pires</h4>
+                    <p>UX-UI e Front-end <br> 4º DSM</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- PROJETO -->
+        <section class="bg2" id="mitescan">
+            <h2 class="title">PROJETO</h2>
+            <div class="line"></div>
+            <div class="grid py-5">
+                <div>
+                    <img src="images/mitescan-logo.png" alt="mitescan" id="project">
+                    <p class="txt-justify">Para o Projeto Integrador, nós, da Ollintech estamos desenvolvendo um
+                        Sistema, que, a partir de
+                        Inteligência Artifical (machine learning) irá auxiliar produtores de queijo de búfala a
+                        controlar a
+                        qualidade de suas produções.</p>
+                </div>
+                <div>
+                    <p class="txt-justify">Após pesquisas, identificamos uma grande defasagem no controle de qualidade
+                        dessas produções,
+                        essa área,
+                        ainda é muito manual, então, nosso objetivo é inovar utilizando tecnologia e facilitar o
+                        controle de
+                        qualidade dessas produções.</p>
+                    <img src="images/mockup-mitescan.png" alt="mitescan mockup" id="project">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="height: 30vh;">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-4">
+                <div class="text-center me-md-4 mb-3 mb-md-0">
+                    <img src="images/logo-footer.png" alt="logo" class="logo-img" style="width: 7vw;">
+                </div>
+                <div class="divider-ft d-none d-md-block"></div>
+                <div class="text-center ms-md-4">
+                    <p class="contact-text mb-0">Entre em contato<br>conosco!</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <div class="col-6 col-md-3 icon-text"><i class="bi bi-geo-alt"></i> Registro, SP.</div>
+                <div class="col-6 col-md-3 icon-text"><i class="bi bi-telephone-outbound"></i> 13 99757-9138</div>
+                <div class="col-6 col-md-3 icon-text"><i class="bi bi-instagram"></i> @ollin_tech</div>
+                <div class="col-6 col-md-3 icon-text"><i class="bi bi-envelope"></i> ollintech@gmail.com</div>
+            </div>
+
+            <div class="copyright mt-4">
+                Copyright@ 2024 – Ollintech
+            </div>
         </div>
+    </footer>
 
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Ícones -->
-  <section class="section-icons" style="max-height: 85vh;">
-    <div class="container" style="margin-top: 15vh;">
-      <div class="row mx-auto mt-5">
-        <div class="col-md-4 icon-box">
-          <i class="icon bi bi-pencil-square"></i>
-          <h4 class="fw-bold mt-2">SOBRE</h4>
-          <p>Clique aqui para conhecer mais sobre a equipe e nossa história!</p>
-        </div>
-        <div class="col-md-4 icon-box" id="integrantes">
-          <i class="icon bi bi-people-fill"></i>
-          <h4 class="fw-bold mt-2">INTEGRANTES</h4>
-          <p>Conheça um pouco mais sobre os integrantes da equipe e suas funções.</p>
-        </div>
-        <div class="col-md-4 icon-box" id="projeto">
-          <i class="icon bi bi-briefcase-fill"></i>
-          <h4 class="fw-bold mt-2">PROJETO</h4>
-          <p>Saiba mais sobre o principal projeto da equipe.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sobre nós -->
-  <section class="section" id="sobre" style="background-color: #1e1e1e;">
-    <div class="container">
-      <h2>SOBRE NÓS</h2>
-      <div class="mx-auto mb-4 divider"></div>
-      <p class="px-3 px-md-5 pb-5">A ollintech é uma equipe de tecnologia que surgiu na FATEC, para a realização de um
-        trabalho, o Projeto Integrador, que visa o desenvolvimento de um sistema para a solução de algum problema, mas
-        para isso era necessária a criação de uma logomarca e identidade visual.</p>
-      <img src="images/mockup-logo.png" alt="Logo" style="max-width: 43vw" class="mt-5">
-      <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
-      </div>
-    </div>
-  </section>
-
-  <!-- Paleta de Cores -->
-  <section class="py-5 text-white text-center section" style="background-color: #2b2b2b;">
-    <div class="container">
-      <h2 class="mb-2">PALETA DE CORES</h2>
-      <div class="mx-auto mb-4 divider"></div>
-
-      <p class="mb-5 px-md-5">
-        Para as cores da nossa logomarca, nós da equipe, pensamos num tom monocromático (variações de tom de uma cor),
-        logo chegamos ao rosa, que passa uma sensação de criatividade, imaginação e conexão. Além disso, adicionamos um
-        “coringa”, um tom de preto mais claro, que inclusive é utilizado nesse website.
-      </p>
-
-      <img src="images/paleta.png" alt="paleta de cores" style="width: 45vw;">
-    </div>
-  </section>
-
-
-  <!-- Tipografia -->
-  <section class="text-center section" style="background-color: #1e1e1e;">
-    <h2 class="mb-2">TIPOGRAFIA</h2>
-    <div class="container">
-      <div class="mx-auto mb-4 divider"></div>
-      <p class="text-white px-4 px-md-5">
-        A tipografia escolhida para a nossa marca foi a <strong>"Kanit"</strong>, uma fonte moderna e robusta
-        que passa a ideia de tecnologia, inovação e confiança.
-      </p>
-      <div class="mt-5" style="font-family: 'Kanit', sans-serif;">
-        <img src="images/fonte.png" alt="fonte-kanit" style="width: 57vw;" class="mt-5">
-      </div>
-    </div>
-  </section>
-
-  <!-- Integrantes -->
-  <section class="text-center py-5 section" style="background-color: #2b2b2b;">
-    <div class="container">
-      <h2 class="mb-2">INTEGRANTES</h2>
-      <div class="mx-auto mb-4 divider"></div>
-      <div class="row justify-content-center g-4 mt-5">
-        <!-- Card 1 -->
-        <div class="col-md-3 col-6 mt-5">
-          <img src="images/ana.png" alt="Ana Flávia" class="image" ;>
-          <h4 class="text-white fw-bold mt-3">Ana Flávia</h4>
-          <p class="text-white small mb-0">Back-end</p>
-          <p class="text-white small">4° DSM</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-3 col-6 mt-5">
-          <img src="images/gusta.png" alt="Gustavo Lanna" class="image" ;>
-          <h4 class="text-white fw-bold mt-3">Gustavo Lanna</h4>
-          <p class="text-white small mb-0">UX-UI e Front-end</p>
-          <p class="text-white small">4° DSM</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-3 col-6 mt-5">
-          <img src="images/isa.png" alt="Isabely lemos" class="image" ;>
-          <h4 class="text-white fw-bold mt-3">Isabely Lemos</h4>
-          <p class="text-white small mb-0">Back-end</p>
-          <p class="text-white small">4° DSM</p>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-md-3 col-6 mt-5">
-          <img src="images/yas.png" alt="Yasmin Pires" class="image" ;>
-          <h4 class="text-white fw-bold mt-3">Yasmin Pires</h4>
-          <p class="text-white small mb-0">UX-UI e Front-end</p>
-          <p class="text-white small">4° DSM</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projeto -->
-  <section class="text-center section" style="background-color: #1e1e1e;">
-      <div class="content">
-
-        <h2 class="mb-2">PROJETO</h2>
-        <div class="mx-auto mb-4 divider"></div>
-
-        <div class="row">
-          <div class="col col-md-6">
-            <img src="images/mitescan-logo.png" id="logo mitescan" style="width: 20vw;">
-          </div>
-          <div class="col col-md-6" id="txt">
-            <p>Para o Projeto Integrador, nós, da Ollintech estamos desenvolvendo um Sistema, que, a partir de
-              Inteligência Artifical (machine learning) irá auxiliar produtores de queijo de búfala a controlar a
-              qualidade de suas produções.</p>
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col col-md-6" id="txt">
-            <p> Após pesquisas, identificamos uma grande defasagem no controle de qualidade dessas produções, essa área,
-              ainda é muito manual, então, nosso objetivo é inovar utilizando tecnologia e facilitar o controle de
-              qualidade dessas produções.</p>
-          </div>
-          <div class="col col-md-6">
-            <img src="images/mockup-mitescan.png" id="mockup mitescan" style="width: 30vw;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container" style="height: 30vh;">
-      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-4">
-        <div class="text-center me-md-4 mb-3 mb-md-0">
-          <img src="images/logo-footer.png" alt="logo" class="logo-img" style="width: 7vw;">
-        </div>
-        <div class="divider-ft d-none d-md-block"></div>
-        <div class="text-center ms-md-4">
-          <p class="contact-text mb-0">Entre em contato<br>conosco!</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center mt-3">
-        <div class="col-6 col-md-3 icon-text"><i class="bi bi-geo-alt"></i> Registro, SP.</div>
-        <div class="col-6 col-md-3 icon-text"><i class="bi bi-telephone-outbound"></i> 13 99757-9138</div>
-        <div class="col-6 col-md-3 icon-text"><i class="bi bi-instagram"></i> @ollin_tech</div>
-        <div class="col-6 col-md-3 icon-text"><i class="bi bi-envelope"></i> ollintech@gmail.com</div>
-      </div>
-
-      <div class="copyright mt-4">
-        Copyright@ 2024 – Ollintech
-      </div>
-    </div>
-  </footer>
-
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
