@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OllinTech - O Movimento que Impulsiona Resultados</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/imgs/logo-black.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/imgs/logo-white.svg" media="(prefers-color-scheme: dark)">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <i class="fa-solid fa-atom"></i> OllinTech
-        </div>
-        <nav>
+    <!-- NAVBAR -->
+    <header class="site-header site-header--hero" id="site-header">
+        <a href="#home" class="site-logo" aria-label="OllinTech — início">
+            <img class="site-logo__img site-logo__img--light" src="assets/imgs/Logo (1).svg" alt="" width="225" height="57"
+                aria-hidden="true">
+            <img class="site-logo__img site-logo__img--dark" src="assets/imgs/Logo (1).svg" alt="OllinTech" width="225"
+                height="57">
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
             <a href="#sobre">Sobre nós</a>
             <a href="#integrantes">Integrantes</a>
             <a href="#mitescan">MiteScan</a>
@@ -23,141 +30,250 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-icon">
-                <i class="fa-solid fa-sun" style="font-size: 4rem; color: #fff;"></i>
+    <!-- HERO -->
+    <section class="hero" id="home" data-header-theme="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-bg__stars"></div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <img src="assets/imgs/logo-white.svg" class="hero-star" alt="" width="131" height="121">
+                <h1>O MOVIMENTO QUE IMPULSIONA RESULTADOS</h1>
+                <p>OllinTech — trazendo praticidade ao seu dia a dia</p>
             </div>
-            <h1>O MOVIMENTO QUE<br>IMPULSIONA RESULTADOS</h1>
-            <p>Ollintech - trazendo praticidade ao seu dia a dia</p>
         </div>
-        
-        <!-- Hands -->
-        <img src="imgs/hands.svg" class="hero-hands-img" alt="Robotic Hands">
-        
-        <div class="scroll-down">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
+        <aside class="hero-hands" aria-hidden="true">
+            <img src="assets/imgs/left-hand.svg" class="hero-hands__arm hero-hands__arm--left" alt="" width="900" height="640">
+            <img src="assets/imgs/right-hand.svg" class="hero-hands__arm hero-hands__arm--right" alt="" width="1000"
+                height="900">
+        </aside>
+        <a href="#sobre" class="hero-scroll" aria-label="Rolar para a próxima seção">
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </a>
     </section>
 
-    <!-- Light Background Area -->
-    <div class="light-bg">
-        <!-- Quem Somos Nós -->
+    <div class="hero-transition" aria-hidden="true">
+        <img src="assets/imgs/vetor-bg (1).svg" alt="" class="hero-transition__vetor" width="1850" height="660">
+    </div>
+
+    <!-- SOBRE NÓS -->
+    <div class="light-bg" data-header-theme="light">
         <section class="about" id="sobre">
-            <div class="about-card">
-                <div class="about-text">
-                    <h2>QUEM SOMOS NÓS</h2>
-                    <p>A OllinTech é uma equipe formada por estudantes do 5º semestre de Desenvolvimento de Software Multiplataforma da FATEC de Registro. O grupo foi criado para o Projeto Integrador, com o objetivo de desenvolver um sistema aplicando, na prática, as tecnologias e conhecimentos aprendidos ao longo do curso. Para representar a equipe, também foi desenvolvida uma logomarca e uma identidade visual próprias.</p>
+            <article class="about-flip" data-about-flip>
+                <button type="button" class="about-card" aria-expanded="false" aria-controls="about-card-text"
+                    aria-label="Quem somos nós. Clique para ver mais sobre a equipe.">
+                    <span class="about-card__scene">
+                        <span class="about-card__inner">
+                            <span class="about-card__face about-card__face--photo">
+                                <img src="assets/imgs/equipe.png" alt="Foto da equipe OllinTech" class="about-card__photo"
+                                    width="1200" height="675">
+                                <span class="about-card__photo-overlay" aria-hidden="true"></span>
+                                <span class="about-card__photo-content">
+                                    <h2>QUEM SOMOS NÓS</h2>
+                                    <span class="about-card__hint">
+                                        <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                                        Conheça nossa equipe
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="about-card__face about-card__face--text" id="about-card-text"
+                                aria-hidden="true">
+                                <span class="about-text">
+                                    <h2>QUEM SOMOS NÓS</h2>
+                                    <p>A OllinTech é uma equipe formada por estudantes do 5º semestre de Desenvolvimento
+                                        de Software Multiplataforma da FATEC de Registro. O grupo foi criado para o
+                                        Projeto Integrador, com o objetivo de desenvolver um sistema aplicando, na
+                                        prática, as tecnologias e conhecimentos aprendidos ao longo do curso. Para
+                                        representar a equipe, também foi desenvolvida uma logomarca e uma identidade
+                                        visual próprias.</p>
+                                </span>
+                                <span class="about-graphic">
+                                    <img src="assets/imgs/logo-white.svg" alt="" class="about-graphic__logo" width="201"
+                                        height="181">
+                                </span>
+                                <span class="about-card__hint about-card__hint--back">
+                                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                                    Voltar à foto
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class="about-flip__nav" role="group" aria-label="Alternar visualização do card">
+                    <button type="button" class="about-flip__dot is-active" data-about-face="0"
+                        aria-label="Ver foto da equipe" aria-pressed="true"></button>
+                    <button type="button" class="about-flip__dot" data-about-face="1" aria-label="Ver texto sobre nós"
+                        aria-pressed="false"></button>
                 </div>
-                <div class="about-graphic">
-                    <i class="fa-solid fa-sun"></i>
-                </div>
-            </div>
+            </article>
         </section>
 
-        <!-- Nossa Equipe -->
+        <!-- INTEGRANTES -->
         <section class="team" id="integrantes">
             <h2 class="section-title">NOSSA EQUIPE</h2>
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="Isabely Lemos">
+                    <img src="assets/imgs/isabely.png" alt="Isabely Lemos">
                     <div class="team-info">
                         <h3>Isabely Lemos</h3>
                         <p>Back-end & Documentação</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> github.com</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin.com</a>
+                            <a href="https://github.com/isabelylemos" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Isabely Lemos"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/isabely-araujo-7829bb303/" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Isabely Lemos"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="Gustavo Lanna">
+                    <img src="assets/imgs/gustavo.png" alt="Gustavo Lanna">
                     <div class="team-info">
                         <h3>Gustavo Lanna</h3>
                         <p>Front & Back-end</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> github.com</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin.com</a>
+                            <a href="https://github.com/GustavoLanna11" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo Lanna"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/gustavolanna11/" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo Lanna"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="João Kusaka">
+                    <img src="assets/imgs/joao.png" alt="João Kusaka">
                     <div class="team-info">
                         <h3>João Kusaka</h3>
                         <p>Front & Back-end</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> github.com</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin.com</a>
+                            <a href="https://github.com/joaovitor101" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de João Kusaka"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/joao-kusaka/" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de João Kusaka"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="Yasmin Pires">
+                    <img src="assets/imgs/yasmin.png" alt="Yasmin Pires">
                     <div class="team-info">
                         <h3>Yasmin Pires</h3>
                         <p>UX/UI & front-end</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> github.com</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin.com</a>
+                            <a href="https://github.com/yaspires" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Yasmin Pires"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/yasmin-pires-belarmino" class="social-links__btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Yasmin Pires"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <h2 class="section-title text-center" style="margin-top: 5rem; margin-bottom: 3rem;">NOSSO PROJETO</h2>
     </div>
 
-    <!-- Nosso Projeto Dark Area -->
-    <div class="project-wrapper" id="mitescan">
-        <div class="bee-icon-wrapper">
-            <i class="fa-solid fa-bug"></i>
+    <!-- PROJETO -->
+    <section class="project-bridge" aria-labelledby="project-heading" data-header-theme="light">
+        <div class="project-intro">
+            <h2 id="project-heading" class="project-intro__title">NOSSO PROJETO</h2>
         </div>
-        
-        <div class="project-content">
-            <p class="project-desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-            
-            <div class="video-container">
-                <img src="https://images.unsplash.com/photo-1560209617-059c0bed8a9a?q=80&w=1000&auto=format&fit=crop" alt="Bee Video Placeholder">
-                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Internet of Things -->
-    <section class="iot" id="tecnologias">
-        <div class="iot-lines"></div>
-        <div class="iot-card">
-            <div class="iot-text">
-                <h2>Internet of Things</h2>
-                <p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-            </div>
-            <div class="iot-icons">
-                <i class="fa-solid fa-microchip"></i>
-                <i class="fa-solid fa-brain"></i>
-                <i class="fa-solid fa-cloud"></i>
-            </div>
-        </div>
+        <img src="assets/imgs/bee.svg" alt="MiteScan" class="project-bridge__bee" width="260" height="275">
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fa-solid fa-atom"></i> OllinTech
+    <!-- MITE-SCAN -->
+    <div class="dark-band" data-header-theme="dark">
+        <section class="project" id="mitescan">
+            <div class="project__inner">
+                <div class="project__copy">
+                    <p>O MiteScan é um sistema web e mobile desenvolvido para auxiliar apicultores no monitoramento de
+                        suas colmeias, com foco na identificação precoce do ácaro varroa, um dos principais causadores
+                        de prejuízos na apicultura. A plataforma permite acompanhar informações importantes como
+                        temperatura e umidade das colmeias, além do envio de imagens e vídeos para análise de possíveis
+                        sinais de infestação ou outros problemas. Dessa forma, o sistema contribui para um manejo mais
+                        eficiente, preventivo e seguro das colmeias.</p>
+                </div>
+
+                <!-- PITCH -->
+                <div class="project__video">
+                    <video class="project__video-player" src="assets/imgs/pitch-mitescan.mp4" controls preload="metadata"
+                        playsinline title="Pitch MiteScan — OllinTech">
+                        Seu navegador não suporta a reprodução de vídeo.
+                    </video>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OllinTech - Todos os direitos reservados.</p>
-                <nav class="footer-nav">
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section class="tech" id="tecnologias" aria-roledescription="carrossel">
+            <div class="tech-carousel" data-tech-carousel tabindex="0">
+                <button type="button" class="tech-carousel__btn tech-carousel__btn--prev"
+                    aria-label="Tecnologia anterior">
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="tech-carousel__viewport">
+                    <div class="tech-carousel__track">
+                        <article class="tech-slide is-active" id="tech-slide-iot" aria-labelledby="tech-title-iot">
+                            <div class="tech-slide__card">
+                                <div class="tech-slide__content">
+                                    <h2 id="tech-title-iot">Internet das Coisas</h2>
+                                    <p>O MiteScan utiliza IoT para conectar sensores e dispositivos às colmeias,
+                                        permitindo o monitoramento remoto de condições ambientais e o envio de dados em
+                                        tempo real para a plataforma, facilitando o acompanhamento da saúde das abelhas.
+                                    </p>
+                                </div>
+                                <div class="tech-slide__icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tech-slide" id="tech-slide-ia" aria-labelledby="tech-title-ia">
+                            <div class="tech-slide__card">
+                                <div class="tech-slide__content">
+                                    <h2 id="tech-title-ia">Inteligência Artificial</h2>
+                                    <p>A inteligência artificial no MiteScan é utilizada como um recurso de apoio na
+                                        análise de imagens e vídeos enviados pelos apicultores. A partir dessas mídias,
+                                        o sistema busca identificar possíveis sinais de problemas nas colmeias, como a
+                                        presença do ácaro varroa e outras anomalias visuais nas abelhas.</p>
+                                </div>
+                                <div class="tech-slide__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+                            </div>
+                        </article>
+                        <article class="tech-slide" id="tech-slide-nuvem" aria-labelledby="tech-title-nuvem">
+                            <div class="tech-slide__card">
+                                <div class="tech-slide__content">
+                                    <h2 id="tech-title-nuvem">Nuvem</h2>
+                                    <p>A infraestrutura em nuvem garante o armazenamento seguro das informações
+                                        coletadas, sincronização entre dispositivos e acesso à plataforma de qualquer
+                                        lugar, com escalabilidade para o crescimento do projeto MiteScan.</p>
+                                </div>
+                                <div class="tech-slide__icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button type="button" class="tech-carousel__btn tech-carousel__btn--next"
+                    aria-label="Próxima tecnologia">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                <div class="tech-carousel__dots" role="tablist" aria-label="Selecionar tecnologia">
+                    <button type="button" class="tech-carousel__dot is-active" role="tab" aria-selected="true"
+                        aria-controls="tech-slide-iot" data-slide="0">IoT</button>
+                    <button type="button" class="tech-carousel__dot" role="tab" aria-selected="false"
+                        aria-controls="tech-slide-ia" data-slide="1">IA</button>
+                    <button type="button" class="tech-carousel__dot" role="tab" aria-selected="false"
+                        aria-controls="tech-slide-nuvem" data-slide="2">Nuvem</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <a href="#home" class="site-footer__logo" aria-label="OllinTech — início">
+                        <img src="assets/imgs/Logo (1).svg" alt="OllinTech" width="225" height="57">
+                    </a>
+                    <p class="site-footer__copy">&copy; 2026 OllinTech — Todos os direitos reservados.</p>
+                </div>
+                <nav class="site-footer__nav" aria-label="Links do rodapé">
                     <a href="#sobre">sobre nós</a>
                     <a href="#mitescan">MiteScan</a>
                     <a href="#tecnologias">tecnologias</a>
                     <a href="#pitch">Pitch</a>
                 </nav>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="assets/js/about-flip.js" defer></script>
+    <script src="assets/js/tech-carousel.js" defer></script>
+    <script src="assets/js/navbar-theme.js" defer></script>
 </body>
+
 </html>
